@@ -1,0 +1,29 @@
+<div class="center-contents">
+    <h1>{{ TITLE }}</h1>
+
+    <p>Capture an image to start recognizing text</p><br>
+
+    <button mat-raised-button color="primary">
+        <label for="imageInput" >Capture Image</label>   
+    </button>
+    <input class="invisible" id="imageInput" type="file" accept="image/*" capture="environment" (change)="recognize($event)">
+    <br><br><br>
+
+    <mat-spinner
+        *ngIf="showSpinner"
+        [color]="'primary'"
+        [diameter]="30"
+        [mode]="'indeterminate'">
+    </mat-spinner>
+    <br>
+
+    <mat-card #textCard class="text-card" *ngIf="!showSpinner && text">
+        <mat-card-content>
+            <ng-container >
+                <button mat-raised-button color="primary" id="download-pdf" (click)="downloadPDF()">download as PDF</button>
+                <br>
+                <p> {{ text }} </p>
+            </ng-container>
+        </mat-card-content>
+    </mat-card>
+</div>
