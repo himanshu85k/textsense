@@ -7,11 +7,9 @@ pages:
   script:
     - npm install
     - cp index.d.ts node_modules/tesseract.js/src/
-    - ls
     - npm run buildProd
   artifacts:
     paths:
       - public
   only:
     - master
-    - pages
