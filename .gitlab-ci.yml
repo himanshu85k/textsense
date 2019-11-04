@@ -6,8 +6,8 @@ pages:
       - node_modules/
   script:
     - npm install
-    - npm run buildProd
     - cp file index.d.ts node_modules/tesseract.js/src/index.d.ts
+    - npm run buildProd
   artifacts:
     paths:
       - public
