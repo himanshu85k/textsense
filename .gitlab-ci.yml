@@ -1,14 +1,15 @@
 image: trion/ng-cli-karma
 
-cache:
-  paths:
-    - node_modules/
-
-deploy_stage:
-  stage: deploy
-  environment: Stage
+pages:
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm install
+    - npm run buildProd
+  artifacts:
+    paths:
+      - public
   only:
     - master
-  script:
-    - rm ./package-lock.json
-    - npm install
+    - pages
