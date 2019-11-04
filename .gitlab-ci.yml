@@ -1,4 +1,4 @@
-image: trion/ng-cli-karma
+image: node:12.11
 
 pages:
   cache:
