@@ -9,7 +9,7 @@
     <button mat-raised-button color="primary">
         <label for="imageInput" >Capture Image</label>   
     </button>
-    <input class="invisible" id="imageInput" type="file" accept="image/*" capture="camera" (change)="recognize($event)">
+    <input class="invisible" id="imageInput" type="file" accept="image/*;capture=camera" (change)="recognize($event)">
     <!-- capture="environment"  -->
     <br><br><br>
 
