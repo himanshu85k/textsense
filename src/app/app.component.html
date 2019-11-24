@@ -1,12 +1,16 @@
 <div class="center-contents">
-    <h1>{{ TITLE }}</h1>
+    <h1>
+        <!-- <img src="../favicon.ico"> -->
+         {{ TITLE }}
+    </h1>
 
     <p>Capture an image to start recognizing text</p><br>
 
     <button mat-raised-button color="primary">
         <label for="imageInput" >Capture Image</label>   
     </button>
-    <input class="invisible" id="imageInput" type="file" accept="image/*" capture="environment" (change)="recognize($event)">
+    <input class="invisible" id="imageInput" type="file" accept="image/*" (change)="recognize($event)">
+    <!-- capture="environment"  -->
     <br><br><br>
 
     <mat-spinner

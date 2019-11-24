@@ -8,7 +8,7 @@ import { createWorker } from 'tesseract.js';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  TITLE = 'Text Sense';
+  TITLE = 'TextSense';
   text = '';
   showSpinner = false;
   worker: any;
