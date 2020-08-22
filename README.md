@@ -1,4 +1,9 @@
-# Ocr
+# TextSense
+
+A standalone Angular application lets users upload a photo, the app extracts text out of it through OCR (Optical Character Recognition). Also it creates a PDF combining the uploaded image and overlaying it with the recognized text. The text can then be easily selected and copied.
+
+Technologies used: Angular, TesseractJS
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
